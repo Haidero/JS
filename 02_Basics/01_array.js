@@ -15,11 +15,12 @@ const my_array =[0, 1, 2, 3, 4, 5]
 // console.log(newarr);
 
 //****************########## SLICE & SPLICE ################# */
-console.log("A", my_array)
+// console.log("A", my_array)
 
-const mysn1 = my_array.slice(1,3);
+// const mysn1 = my_array.slice(1,3);
 
-console.log("B", mysn1)
+// console.log("B", mysn1)
 
-const mysn2 = my_array.splice(1,3);
-console.log("c", mysn2)
+// const mysn2 = my_array.splice(1,3);
+// console.log("c", mysn2)
+
