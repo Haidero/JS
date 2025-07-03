@@ -85,11 +85,11 @@ console.log(inst);
 // }
  //*****// how to use fetch api
 
-{
-    {},
-    {},
-    {},
-}
+// {
+//     {},
+//     {},
+//     {},
+// }
 
  //https://randomuser.me/
  //JSON formater
