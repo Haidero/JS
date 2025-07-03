@@ -34,22 +34,21 @@
 
 ///Note: return k bd vairable me store krsktey hai
 
-function userliginmessage(username){
+function userliginmessage(username){   
     if(username === undefined){
         console.log("plz enter user name")
         return
     }
-    return `${username} just logginned` 
+    return `${username} just loged in` 
 }
  console.log(userliginmessage()) // agr () na lage tu ye errorr ae ga [Function: userliginmessage]
 
- function usermessage(user_name){
+ function usermessage(user_name= "sam"){  //give default value 
     if(!user_name){        // react_native
         console.log("plz enter user name")
         return
     }
-    return `${user_name} just logginned` 
+    return `${user_name} just loged in` 
 }
- console.log(usermessage())
+ console.log(usermessage("Waseem_shek"))
 
- 
