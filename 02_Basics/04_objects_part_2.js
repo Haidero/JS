@@ -44,10 +44,10 @@
 
 // // users[1].email
 
-console.log(tinderUsers);
-console.log(Object.keys(tinderUsers));
-console.log(Object.values(tinderUsers));
-console.log(Object.entries(tinderUsers));
+// console.log(tinderUsers);
+// console.log(Object.keys(tinderUsers));
+// console.log(Object.values(tinderUsers));
+// console.log(Object.entries(tinderUsers));
 
 // console.log(tinderUsers.hasOwnProperty('isloggeddin'));
 
