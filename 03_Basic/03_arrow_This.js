@@ -37,9 +37,23 @@
 // }
 // chai()
 
-const  chai = () => {
-    let username = "Haider"
-    console.log(this);
-}
-chai()
+// const  chai = () => {
+//     let username = "Haider"
+//     console.log(this);
+// }
+// chai()
 
+// EXPLICIT RETURN
+// const addtwo = (num1, num2) =>{
+//     return num1 + num2
+// }
+// console.log(addtwo(3,8));
+
+///implicit return ---me maan liya 
+// const addtwo = (num1, num2) => num1 + num2
+// const addtwo = (num1, num2) => (num1 + num2) // return likhn pare ga
+
+const addtwo = (num1, num2) => ({username: "Ali"}) // FOR object RETURN
+
+
+console.log(addtwo(3,8));
