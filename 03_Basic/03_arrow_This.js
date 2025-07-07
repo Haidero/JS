@@ -53,7 +53,10 @@
 // const addtwo = (num1, num2) => num1 + num2
 // const addtwo = (num1, num2) => (num1 + num2) // return likhn pare ga
 
-const addtwo = (num1, num2) => ({username: "Ali"}) // FOR object RETURN
+// const addtwo = (num1, num2) => ({username: "Ali"}) // FOR object RETURN
+// console.log(addtwo(3,8));
 
+////// Loops k liye
+const = My_array = [1,3,45,5,66,6,6]
 
-console.log(addtwo(3,8));
+My_array.forEach(() => )
