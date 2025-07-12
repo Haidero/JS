@@ -29,5 +29,21 @@
     }
     
     addoptionlanguage('Golang')
+
+    //EDIT
+    const secondlang =  document.querySelector("li:nth-child(2)")
+    // secondlang.innerHTML = "Mojo" /// Not Optimized Approch
+
+    const newli = document.createElement('li')  
+    newli.textContent = "Lojo"                  //Optimized Approch
+    secondlang.replaceWith(newli)
+
+    //EDIT
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = '<li>TypeScript</li>'
+
+    //REMOVE
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove()
 </script>
 </html>
