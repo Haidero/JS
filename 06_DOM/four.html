@@ -14,7 +14,7 @@
     /// not optimized
     function addlanguage(langname) {
         const li = document.createElement('li');
-        li.innerHTML = `${langname}`
+        li.innerHTML = `${langname}`    //traversing hoti ha
         document.querySelector('.language').
         appendChild(li)
 
@@ -22,8 +22,12 @@
     addlanguage("React")
     addlanguage("Ruby")
 
-    function name(params) {
-        
+    function addoptionlanguage(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
     }
+    
+    addoptionlanguage('Golang')
 </script>
 </html>
