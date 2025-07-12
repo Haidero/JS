@@ -13,10 +13,18 @@
     console.log(div);
     div.className = "main"
     div.id =Math.round(Math.random() * 10 + 1)
-    div.setAttribute("title", "Hitesh Sir")
+    div.setAttribute("title", "Hitesh Sir")  // prefer more
     div.style.backgroundcolor = "green"
     div.style.padding = "12px"
+    // div.innerText = "Chai or Code"
 
-    /// 
+    //MOST PREFER METHOD 
+    const addText = document.createTextNode("Chai or Code")
+    console.log(addText);
+    div.appendChild(addText)
+
+    //attached 
+    document.body.appendChild(div)
+    
 </script>
 </html>
