@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Events</title>
+</head>
+<body style=background-color:purple; >
+    <h2>JAIL IMAGES</h2>
+<div>
+<ul id="images" style="list-style-type: none; background-color: rgb(128, 145, 159);">
+    <li><img width = "200px" id="photoshop" src="https://images.pexels.com/photos/951408/pexels-photo-951408.jpeg?_gl=1*1wqm0j7*_ga*MTk0Mzg2OTgxLjE3NTE2MjQ3MjI.*_ga_8JE65Q40S6*czE3NTI4MzYyNjEkbzMkZzEkdDE3NTI4MzczNTMkajI3JGwwJGgw" alt="photoshop"></li>
+    <li><img width = "200px" id="japan" src="https://images.pexels.com/photos/593101/pexels-photo-593101.jpeg" alt="photoshop"></li>
+    <!-- <li><img width = "200px" id="chain" src="https://images.pexels.com/photos/6171707/pexels-photo-6171707.jpeg" alt="" onclick="alert('OHHHH')"></li> -->
+    <li><img width = "200px" id="chain" src="https://images.pexels.com/photos/6171707/pexels-photo-6171707.jpeg" alt=""></li>
+    <li><img width = "200px" id="river" src="https://images.pexels.com/photos/7417585/pexels-photo-7417585.jpeg" alt="photoshop"></li>
+    <li><img width = "200px" id="lock" src="https://images.pexels.com/photos/5779299/pexels-photo-5779299.jpeg" alt="photoshop"></li>
+    <li><a style="color:aliceblue" id="google" href="https://www.google.com/">Google</a></li>
+</ul>
+</div>    
+</body>
+<script>
+// document.getElementById('lock').onclick = function name(params) {     ////feature kam detey hai
+//     alert("Locked")
+// }
+// attachEvent()
+// jQuery-on
+// document.getElementById('lock').addEventListener('click', function(){
+//     alert('clicked again')
+// },)  //default false hota 
+
+// document.getElementById('lock').addEventListener('click', function(e){
+//     console.log(e);
+//     //type, timestamp,  defaultprevent, target, toelement , sorceelement, clientx, clienty, screenx, screeny, altkey, ctrl,key, shiftkey, keycode
+// },)  
+
+
+// document.getElementById('images').addEventListener('click', function(e){
+//     console.log("clicked inside ul");
+    //type, timestamp,  defaultprevent, target, toelement , sorceelement, clientx, clienty, screenx, screeny, altkey, ctrl,key, shiftkey, keycode
+// },)
+// document.getElementById('images').addEventListener('click', function(e){
+//     console.log("clicked inside ul");
+// }, true)
+
+// document.getElementById('lock').addEventListener('click', function(e){
+//     console.log("clicked on lock");
+//     e.stopPropagation()
+// },true)
+
+// document.getElementById('id').addEventListener('click', function(e){
+//     e.preventDefault;
+//     e.stopImmediatePropagation
+//     console.log("click inside google");
+    
+// })
+
+    document.querySelector('#images').addEventListener('click', function (e) {
+        console.log(e.target.parentNode);
+        let removeit = e.target.parentNode
+        removeit.remove()
+        
+    })
+</script>
+</html>
