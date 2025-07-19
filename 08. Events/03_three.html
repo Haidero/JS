@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Start/Stop Date Logger</title>
+</head>
+<body>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+        let intervalid;
+
+        const sayDate = (str) => {
+            console.log(str, Date.now());
+        };
+
+        document.querySelector('#start').addEventListener('click', () => {
+            if (!intervalid) {
+                intervalid = setInterval(sayDate, 1000, "hi");
+                console.log("Started");
+            }
+        });
+
+        document.querySelector('#stop').addEventListener('click', () => {
+            clearInterval(intervalid);
+            intervalid = null;  // prevent multiple intervals
+            console.log("Stopped");
+        });
+    </script>
+</body>
+</html>
