@@ -6,18 +6,23 @@
     <title>Chae or Code</title>
 </head>
 <body>
-    <h1>Sale</h1>
+    <h1>SALE</h1>
     <button><div id="stop">stop</div></button>
 <script>
     const sayhitesh = () => {
-        console.log("hishesh");
+        console.log("hitesh");
     }
 
     const changetext = () => {
         document.querySelector('h1').innerHTML = "50% OFF";
     }
 
-    setTimeout(changetext, 3000);
+    const clearme = setTimeout(changetext, 3000);
+
+    document.querySelector('#stop').addEventListener('click', () => {
+        clearTimeout(clearme);
+        console.log("STOPPED");
+    });
 </script>
 
 </body>
