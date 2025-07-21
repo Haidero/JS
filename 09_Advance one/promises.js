@@ -77,4 +77,26 @@ async function consumepromise() {
     }
 }
 
-consumepromise();
+// consumepromise();
+
+// async function getallusers() {
+//   try {
+//     const response = await fetch('https://api.github.com/users/Haidero');
+//     console.log("Raw response:", response);
+
+//     const data = await response.json(); // Await is necessary here too
+//     console.log("Parsed data:", data);
+//   } catch (error) {
+//     console.log("E:", error);
+//   }
+// }
+
+// getallusers(); // You must call the function
+
+fetch('https://api.github.com/users/Haidero')
+.then((response) => {
+  return response.json()
+})
+.then((data)=>{
+  console.log(data);
+})
