@@ -52,4 +52,29 @@ promisefour
     })
     .catch(function (error) {
         console.log(error);
-    });
+    }).finally (()=>{
+      console.log("finaly your promise or either resolve or rejected")
+    })
+
+    /////////////////////////
+const promisefive = new Promise(function(resolve, reject) {
+    setTimeout(function() {
+        let error = true;
+        if (!error) {
+            resolve({ username: "ali", email: "ali@gmail.com", password: "12345" });
+        } else {
+            reject('ERROR: SOMETHING WENT WRONG');
+        }
+    }, 1000);
+});
+
+async function consumepromise() {
+    try {
+        const response = await promisefive;
+        console.log(response);
+    } catch (error) {
+        console.log('Caught error:', error);
+    }
+}
+
+consumepromise();
