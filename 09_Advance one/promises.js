@@ -31,19 +31,25 @@ promisethree.then(function (user) {
 });
 
 
-const promisefour = new Promise(function(resolve, reject){
-    setTimeout(function(){
-        let error = true
-        if (!error){
+const promisefour = new Promise(function(resolve, reject) {
+    setTimeout(function() {
+        let error = true;
+        if (!error) {
             resolve({ username: "chai", email: "haider@gmail.com" });
-        }else{
-            reject('ERROR: sOMETHING WENT WRONG')
+        } else {
+            reject('ERROR: SOMETHING WENT WRONG');
         }
-        
-    },1000)
+    }, 1000);
+});
 
-promisefour.then(()=>{
-    console.log(user);
-    return.username
-})
-})
+promisefour
+    .then((user) => {
+        console.log(user);
+        return user.username;
+    })
+    .then((username) => {
+        console.log(username); // Now `username` is available here
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
